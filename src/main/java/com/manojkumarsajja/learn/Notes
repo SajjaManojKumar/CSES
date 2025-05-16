@@ -1,0 +1,5 @@
+System.out.print take longer time. Hence we can store all the results into an StringBuilder
+and call System.out.println on StringBuilder post computation.
+
+
+Scanner with System.in can be replaced with BufferReader as it will take lots of time causing TLE.
