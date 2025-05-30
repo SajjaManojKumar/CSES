@@ -18,8 +18,8 @@ public class Repetitions {
         int currCount = 1;
         int n = str.length;
 
-        for(int i=1; i<n; i++) {
-            if(str[i] == str[i-1]) {
+        for (int i = 1; i < n; i++) {
+            if (str[i] == str[i - 1]) {
                 currCount++;
                 maxCount = Math.max(maxCount, currCount);
             } else {

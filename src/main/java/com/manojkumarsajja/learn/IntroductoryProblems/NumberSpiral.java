@@ -10,7 +10,7 @@ public class NumberSpiral {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int t = Integer.parseInt(br.readLine());
         StringBuilder result = new StringBuilder();
-        while(t-- > 0) {
+        while (t-- > 0) {
             String[] yx = br.readLine().split(" ");
             result.append(numberSpiral(yx)).append("\n");
         }
@@ -21,17 +21,17 @@ public class NumberSpiral {
         long y = Long.parseLong(yx[0]);
         long x = Long.parseLong(yx[1]);
 
-        if(y > x) {
-            if(y%2 != 0) {
-                return ((y-1) * (y-1)) + x;
+        if (y > x) {
+            if (y % 2 != 0) {
+                return ((y - 1) * (y - 1)) + x;
             } else {
-                return ((y-1) * (y-1)) + (2*y - x);
+                return ((y - 1) * (y - 1)) + (2 * y - x);
             }
         } else {
-            if(x%2 != 0) {
-                return ((x-1) * (x-1)) + (2*x - y);
+            if (x % 2 != 0) {
+                return ((x - 1) * (x - 1)) + (2 * x - y);
             } else {
-                return ((x-1) * (x-1)) + y;
+                return ((x - 1) * (x - 1)) + y;
             }
         }
     }
