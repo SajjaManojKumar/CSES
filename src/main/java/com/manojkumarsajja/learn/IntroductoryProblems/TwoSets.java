@@ -16,7 +16,7 @@ public class TwoSets {
     private static void twoSets(int n) {
         long tSum = (n * ((long) n + 1)) / 2;
 
-        if(tSum % 2 != 0) {
+        if (tSum % 2 != 0) {
             System.out.println("NO");
             return;
         }
@@ -26,15 +26,15 @@ public class TwoSets {
         int s1Len = 0;
         StringBuilder s2 = new StringBuilder();
         int s2Len = 0;
-        boolean[] seen = new boolean[n+1];
+        boolean[] seen = new boolean[n + 1];
 
         long s1Sum = 0;
         long maxVal = n;
 
-        while(s1Sum < tSum / 2) {
-            long reqSum = tSum/2 - s1Sum;
+        while (s1Sum < tSum / 2) {
+            long reqSum = tSum / 2 - s1Sum;
 
-            if(reqSum > maxVal) {
+            if (reqSum > maxVal) {
                 s1.append(maxVal).append(" ");
                 s1Len++;
                 seen[(int) maxVal] = true;
@@ -48,8 +48,8 @@ public class TwoSets {
             }
         }
 
-        for(int i=1; i <= n; i++) {
-            if(!seen[i]) {
+        for (int i = 1; i <= n; i++) {
+            if (!seen[i]) {
                 s2.append(i).append(" ");
                 s2Len++;
             }

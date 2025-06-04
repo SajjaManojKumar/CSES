@@ -8,9 +8,9 @@ public class MissingNumber {
         Scanner in = new Scanner(System.in);
 
         int n = in.nextInt();
-        int[] arr = new int[n-1];
+        int[] arr = new int[n - 1];
 
-        for(int i=0; i<n-1; i++) {
+        for (int i = 0; i < n - 1; i++) {
             arr[i] = in.nextInt();
         }
 
@@ -22,10 +22,10 @@ public class MissingNumber {
     private static int missingNumber(int[] nums, int n) {
         int xorVal = 0;
 
-        for(int i=1; i<=n; i++) {
+        for (int i = 1; i <= n; i++) {
             xorVal ^= i;
         }
-        for(int num : nums) {
+        for (int num : nums) {
             xorVal ^= num;
         }
 

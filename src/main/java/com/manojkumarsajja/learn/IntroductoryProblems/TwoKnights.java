@@ -14,8 +14,8 @@ public class TwoKnights {
     }
 
     private static void twoKnights(int n) {
-        for(long i=1L; i<=n; i++) {
-            long ans = (i * i * (i * i - 1)/2) - (4L * (i - 1) * (i - 2));
+        for (long i = 1L; i <= n; i++) {
+            long ans = (i * i * (i * i - 1) / 2) - (4L * (i - 1) * (i - 2));
             System.out.println(ans);
         }
     }

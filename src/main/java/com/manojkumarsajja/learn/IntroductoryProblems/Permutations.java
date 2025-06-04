@@ -14,16 +14,16 @@ public class Permutations {
     }
 
     private static void permutations(int n) {
-        if(n == 2 || n == 3) {
+        if (n == 2 || n == 3) {
             System.out.println("NO SOLUTION");
             return;
         }
 
         for (int i = 2; i <= n; i += 2) {
-            System.out.print(i+" ");
+            System.out.print(i + " ");
         }
         for (int i = 1; i <= n; i += 2) {
-            System.out.print(i+" ");
+            System.out.print(i + " ");
         }
 
         System.out.println();
@@ -32,7 +32,7 @@ public class Permutations {
     private static void permutations_optimised_for_submission(int n) {
         // Note: Use of System.out.print will cause TLE as it will increase in time consumption.
         // Hence append all the values into StringBuilder and print it all at once.
-        if(n == 2 || n == 3) {
+        if (n == 2 || n == 3) {
             System.out.println("NO SOLUTION");
             return;
         }
