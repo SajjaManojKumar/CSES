@@ -13,7 +13,7 @@ public class ReadingBooks {
         int n = Integer.parseInt(br.readLine());
         String[] books_str = br.readLine().split(" ");
         ArrayList<Long> books = new ArrayList<>();
-        for(String book : books_str) {
+        for (String book : books_str) {
             books.add(Long.parseLong(book));
         }
 
@@ -26,7 +26,7 @@ public class ReadingBooks {
         long lrgBook = 0L;
         long totalTime = 0L;
 
-        for(long book : books) {
+        for (long book : books) {
             lrgBook = Math.max(lrgBook, book);
             totalTime += book;
         }
