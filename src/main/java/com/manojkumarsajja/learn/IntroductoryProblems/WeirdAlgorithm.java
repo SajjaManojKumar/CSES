@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class WeirdAlgorithm {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        long n = (long) in.nextInt();
+        long n = in.nextLong();
         weirdAlgorithm(n);
         in.close();
     }

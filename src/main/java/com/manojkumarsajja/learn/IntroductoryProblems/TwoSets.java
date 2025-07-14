@@ -56,8 +56,8 @@ public class TwoSets {
         }
 
         System.out.println(s1Len);
-        System.out.println(s1.toString());
+        System.out.println(s1);
         System.out.println(s2Len);
-        System.out.println(s2.toString());
+        System.out.println(s2);
     }
 }
