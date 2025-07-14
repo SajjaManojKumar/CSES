@@ -14,7 +14,7 @@ public class NumberSpiral {
             String[] yx = br.readLine().split(" ");
             result.append(numberSpiral(yx)).append("\n");
         }
-        System.out.println(result.toString());
+        System.out.println(result);
     }
 
     private static long numberSpiral(String[] yx) {

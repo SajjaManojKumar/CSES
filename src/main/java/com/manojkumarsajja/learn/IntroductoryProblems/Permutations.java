@@ -46,6 +46,6 @@ public class Permutations {
             sb.append(i).append(" ");
         }
 
-        System.out.println(sb.toString());
+        System.out.println(sb);
     }
 }
